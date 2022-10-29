@@ -14,12 +14,10 @@ import time
 def SendMessageTo(name, message, url, quantity):
     
     chromeOptions = Options()
-    chromeOptions.add_experimental_option("debuggerAddress","localhost:9252")
+    chromeOptions.add_experimental_option("debuggerAddress","localhost:9250")
 
-    #userDataDir = os.getcwd() + "/cookies"
-    #chromeOptions.add_argument("user-data-dir=" + userDataDir)
-    #print("Loading chrome options from: " + userDataDir)
-    #driver = webdriver.Chrome(service=ChromeService(executable_path=ChromeDriverManager().install()),chrome_options=chromeOptions)
+    userDataDir = os.getcwd() + "/cookies"
+    chromeOptions.add_argument("user-data-dir=" + userDataDir)
 
     driver = webdriver.Chrome(options=chromeOptions)
     driver.get(url)

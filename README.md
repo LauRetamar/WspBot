@@ -7,3 +7,11 @@ open a whatsapp web session https://web.whatsapp.com/ (it is required just one t
 
 # Cookies dir
 a cookies directory will be created in the root folder, it stores browser session files and it allows to re-open the previous session
+
+# Environment
+Ubuntu
+
+# Requirements
+selenium
+webdriver_manager
+chromium
