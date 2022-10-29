@@ -1,15 +1,9 @@
 from ast import keyword
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.chrome.service import Service as ChromeService
-from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.keys import Keys
 import os
-import time
-
-#enter: "\ue007",
-
 
 def SendMessageTo(name, message, url, quantity):
     
