@@ -20,5 +20,6 @@ def Wait(mins):
     time.sleep(mins*60)
 
     return
-        
 
+def StartAt(date, period):
+    At(date)
